@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./partials/StyleLinks.ejs') %>
+</head>
+<body>
+    <head><style>li{margin-left: 25px;font-size: 20px;} .l1,l2{float: left !important;}</style></head>
+
+    <nav class="navbar navbar-expand-md navbar-expand-lg navbar-dark bg-dark" role="navigation" style="border-radius: 0;">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item ">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link l1" href="/logout">Logout</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+        <h1>Welcome Mr.<%= user %></h1>
+    <button class="btn btn-primary"><a style="color:white" class="text-decoration-none" href="/logout">Logout</a></button>
+    </div>
+</body>
+<%- include('./partials/ScriptLinks.ejs') %>
+</html>
